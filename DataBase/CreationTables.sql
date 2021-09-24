@@ -17,3 +17,9 @@ create table features(
     person boolean default False not null,
     city boolean default False not null
 );
+
+create table PAYMENTS(
+	PAYMENT_ID int primary key,
+    payPerPost smallint not null,
+    payPerHour smallint not null
+);
