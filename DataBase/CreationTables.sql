@@ -1,3 +1,9 @@
+/* 
+CREATED ON: September 24th 2021
+BY: pinillosdev@gmail.com
+*/
+
+/* -- Creation tables -- */
 create table weeks(
 	WEEK_ID int primary key,
     postPublished tinyint,
@@ -22,4 +28,15 @@ create table payments(
 	PAYMENT_ID int primary key,
     payPerPost smallint not null,
     payPerHour smallint not null
+);
+
+create table clients(
+	CLIENT_ID bigint primary key,
+    fk_paymentsId int not null unique,
+    telephoneNumber bigint not null unique,
+    businessType varchar(50) not null,
+    email varchar(255) not null unique,
+    birthDate date not null,
+    countryWhereLive varchar(50) not null,
+    createDate date
 );
