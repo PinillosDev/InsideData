@@ -50,3 +50,15 @@ create table employees(
     countryWhereLive varchar(100) not null,
     hireDate date not null
 );
+
+create table posts(
+	POST_ID bigint primary key,
+    fk_weekId int not null,
+    fk_employeeId bigint not null,
+    fk_featureId int not null,
+    topic varchar (70) not null,
+    postPublicationTime time not null,
+    dayOfTheWeek varchar(15) not null,
+    postPublicationDate date not null,
+    firstMinutesInteractions mediumint unsigned not null
+    );
