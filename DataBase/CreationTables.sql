@@ -29,7 +29,7 @@ create table payments(
     payPerPost smallint not null,
     payPerHour smallint not null
 );
-
+drop table clients;
 create table clients(
 	CLIENT_ID bigint primary key,
     fk_paymentsId int not null unique,
@@ -39,4 +39,14 @@ create table clients(
     birthDate date not null,
     countryWhereLive varchar(50) not null,
     createDate date
+);
+
+create table employees(
+	EMPLOYEE_ID bigint primary key,
+    fk_clientId bigint not null unique,
+    firstName varchar(100),
+    lastName varchar(100) not null,
+    email varchar(255) not null unique,
+    countryWhereLive varchar(100) not null,
+    hireDate date not null
 );
