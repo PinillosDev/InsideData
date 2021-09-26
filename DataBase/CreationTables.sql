@@ -43,7 +43,7 @@ create table clients(
 
 create table employees(
 	EMPLOYEE_ID bigint primary key,
-    fk_clientId bigint not null unique,
+    fk_clientId bigint not null,
     firstName varchar(100),
     lastName varchar(100) not null,
     email varchar(255) not null unique,
