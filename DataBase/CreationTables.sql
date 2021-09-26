@@ -29,10 +29,10 @@ create table payments(
     payPerPost smallint not null,
     payPerHour smallint not null
 );
-drop table clients;
+
 create table clients(
 	CLIENT_ID bigint primary key,
-    fk_paymentsId int not null unique,
+    fk_paymentsId int not null,
     telephoneNumber bigint not null unique,
     businessType varchar(50) not null,
     email varchar(255) not null unique,
