@@ -1,29 +1,24 @@
 create table salesWeek(
 	WEEK_ID int primary key,
-    salesPerWeek smallint,
-    moneySalesPerWeek int,
-    bestSellingProduct varchar(100),
-    worstSellingProduct varchar(100),
-    cityMoreSales varchar(100),
-    countryMoreSales varchar(100)
+    dayOfTheWeek varchar(30) not null,
+    sold_units int,
+    total_sale_value bigint,
+    citySale varchar(100),
+    countrySale varchar(100)
 );
 
 create table salesMonth(
 	MONTH_ID int primary key,
-    salesPerMonth smallint,
-    moneySalesMonth int,
-    bestSellingProduct varchar(100),
-    worstSellingProduct varchar(100),
-    cityMoreSales varchar(100),
-    countryMoreSales varchar(100)
+    sold_units int,
+    total_sale_value bigint,
+    citySale varchar(100),
+    countrySale varchar(100)
 );
 
 create table salesYear(
-	YEAR_ID int primary key,
-    salesPerYear smallint,
-    moneySalesYear int,
-    bestSellingProduct varchar(100),
-    worstSellingProduct varchar(100),
-    cityMoreSales varchar(100),
-    countryMoreSales varchar(100)
-);
+    YEAR_ID int primary key,
+    sold_units int,
+    total_sale_value bigint,
+    citySale varchar(100),
+    countrySale varchar(100)
+)
