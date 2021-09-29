@@ -1,1 +1,1 @@
-saleId,dateStartWeek,dateFinishWeek,dayOfTheWeek,sold_units,total_sale_value,citySale,countrySale
+saleId,dayOfTheWeek,sold_units,total_sale_value,citySale,countrySale
