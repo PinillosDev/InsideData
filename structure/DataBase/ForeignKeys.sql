@@ -14,3 +14,7 @@ foreign key (fk_clientId) references clients(CLIENT_ID);
 -- posts >> employees
 alter table posts add constraint fk_posts_employees
 foreign key (fk_employeeId) references employees(EMPLOYEE_ID);
+
+-- posts >> weeks
+alter table posts add constraint fk_posts_weeks
+foreign key (fk_weekId) references weeks(WEEK_ID);
