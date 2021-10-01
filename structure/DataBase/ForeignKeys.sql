@@ -18,3 +18,7 @@ foreign key (fk_employeeId) references employees(EMPLOYEE_ID);
 -- posts >> weeks
 alter table posts add constraint fk_posts_weeks
 foreign key (fk_weekId) references weeks(WEEK_ID);
+
+-- posts >> features
+alter table posts add constraint fk_posts_features
+foreign key (fk_featureId) references features(FEATURES_ID);
