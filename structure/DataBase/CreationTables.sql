@@ -10,7 +10,8 @@ create table weeks(
     minutesWorked tinyint,
     daysPublished tinyint,
     totalInteractions int,
-    mediaInteractions int
+    mediaInteractions int,
+    numberFollowers int
 );
 
 create table features(
