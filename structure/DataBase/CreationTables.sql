@@ -39,7 +39,7 @@ create table clients(
     email varchar(255) not null unique,
     birthDate date not null,
     countryWhereLive varchar(50) not null,
-    createDate date
+    createDate timestamp
 );
 
 create table employees(
@@ -60,6 +60,6 @@ create table posts(
     topic varchar (70) not null,
     postPublicationTime time not null,
     dayOfTheWeek varchar(15) not null,
-    postPublicationDate date not null,
+    postPublicationDate timestamp not null,
     firstMinutesInteractions mediumint unsigned not null
 );
